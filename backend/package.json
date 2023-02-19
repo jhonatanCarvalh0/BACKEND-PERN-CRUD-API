@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-pern-crud-api",
+  "version": "1.0.0",
+  "description": "This is will be a FULLSTACK application constructed with the PERN Stack (PostgreSQL, Express, React, Node) to do CRUD requisitions!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonatanCarvalh0/FULLSTACK-PERN-CRUD-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonatanCarvalh0/FULLSTACK-PERN-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/jhonatanCarvalh0/FULLSTACK-PERN-CRUD-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
