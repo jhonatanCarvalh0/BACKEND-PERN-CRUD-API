@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 //API-DATA
-const stevenUniverseCharacters = [
+const StevenUniverseCharacters = [
   {
     characterName: "Steven Universe",
     color: "Pink",
@@ -44,47 +44,21 @@ const stevenUniverseCharacters = [
 ];
 
 // API-CRUD
-
 // Read All
 app.get("/characters", (req, res) => {
-  res.send(stevenUniverseCharacters);
+  res.send(StevenUniverseCharacters);
 });
-// Read Single
-app.get("/characters/:id", (req, res) => {
-  const id = req.params.id;
-  const position = id - 1;
-  const characterData = stevenUniverseCharacters[position];
-
-  res.send(characterData);
+app.get("/characters:id", (req, res) => {
+  res.send('Hello World');
 });
-
-// Create
 app.post("/characters", (req, res) => {
-  const newCharacter = req.body;
-  stevenUniverseCharacters.push(newCharacter);
-
-  res.send(`Character created sucessfully!`);
+  res.send('Hello World');
 });
-
-// Update
-app.put("/characters/:id", (req, res) => {
-  const id = req.params.id;
-  const newData = req.body;
-
-  const position = id - 1;
-  stevenUniverseCharacters[position] = newData;
-
-  res.send(`Character Updated sucessfully!`);
+app.put("/characters:id", (req, res) => {
+  res.send('Hello World');
 });
-
-// Remove
-app.delete("/characters/:id", (req, res) => {
-  const id = req.params.id;
-  const newData = req.body;
-
-  const position = id - 1;
-  stevenUniverseCharacters.splice(position, 1);
-  res.send(`Character Removed sucessfully!`);
+app.delete("/characters:id", (req, res) => {
+  res.send('Hello World');
 });
 
 //API-PORT
