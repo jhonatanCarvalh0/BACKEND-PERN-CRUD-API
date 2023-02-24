@@ -1,2 +1,2 @@
-# FULLSTACK-PERN-CRUD-API
-This is will be a FULLSTACK application constructed with the PERN Stack (PostgreSQL, Express, React, Node) to do CRUD requisitions!
+# BACKEND-CRUD-API-
+This is will be a BACKEND application constructed with the PostgreSQL, Express and NodeJS to do CRUD requisitions!
